@@ -19,9 +19,10 @@ public class Principal {
         Enlace c = new Enlace();
         Ciudad ciudad = new Ciudad("Cuenca", 100123);
         c.insertarCiudad(ciudad);
+        c.establecerListaCiudad();
         
-        for (int i = 0; i < c.obtenerDataCiudad().size(); i++) {
-            System.out.printf("%s", c.obtenerDataCiudad().get(i));
+        for (int i = 0; i < c.obtenerListaCiudad().size(); i++) {
+            System.out.printf("%s", c.obtenerListaCiudad().get(i));
         }
     }
 }
